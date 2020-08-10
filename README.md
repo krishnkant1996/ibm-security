@@ -1,6 +1,6 @@
 <h1 align="center">Carbon for IBM Security</h1>
 
-> Carbon for IBM Security is an open-source Carbon experience framework built by IBM Security. With the Carbon Design System and IBM Design Language as its foundation, the framework consists of working code, resources, and a vibrant community of contributors.
+> Carbon for IBM Security is an open-source React component library built by IBM Security. With the Carbon Design System and IBM Design Language as its foundation, the framework consists of working code and resources, maintained by a vibrant community of contributors.
 
 <span align="center">
 
@@ -63,7 +63,7 @@ import { ComponentName } from '@carbon/ibm-security';
 const { ComponentName } = require('@carbon/ibm-security');
 ```
 
-[Babel](https://babeljs.io) builds both of these variants and imports `carbon-components-react` in the respective version using a [plugin](https://github.com/carbon-design-system/ibm-security/blob/master/babel/carbon-imports.babel-plugin.js), so that no further transpilation is required.
+[Babel](https://babeljs.io) builds both of these variants and imports `carbon-components-react` using a [plugin](https://github.com/carbon-design-system/ibm-security/blob/master/babel/carbon-imports.babel-plugin.js), so that no further transpilation is required.
 
 ### SCSS
 
@@ -73,12 +73,6 @@ In addition, to resolve your `@import` declarations, you will need to setup `nod
 
 ```scss
 @import '@carbon/ibm-security/scss/components/ComponentName/index';
-```
-
-To add all of the components' styles, import the entry point:
-
-```scss
-@import '@carbon/ibm-security/scss/index';
 ```
 
 #### Feature flags
@@ -92,7 +86,7 @@ $security--feature-flags: (
   security--css-custom-property-theming: false,
 );
 
-@import '@carbon/ibm-security/scss/index';
+@import '@carbon/ibm-security/scss/components/ComponentName/index';
 ```
 
 Also refer to [feature flags in Carbon](https://github.com/carbon-design-system/carbon/blob/master/packages/components/src/globals/scss/_feature-flags.scss).
@@ -107,24 +101,15 @@ To add all of the components' processed and minified styles, reference `@carbon/
 - [Migration guides](docs/migration)
   - [`v1` to `v2`](docs/migration/migrate-to-2.x.md)
 - [Storybook](docs/storybook.md)
+- [Themes](docs/themes)
 
 ### Themes
 
 Themes are used for applying color in Carbon for IBM Security and offered by outputting [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) for theme tokens. Check out our [theming documentation](docs/themes) for guidelines.
 
-### Carbon Developer Essentials
-
-You can learn web development best practices and the ins and outs of using Carbon components by [creating a React app with the Carbon Design System](https://www.carbondesignsystem.com/tutorial/react/overview).
-
-If you want to show the world your new skills, you can [apply for an IBM Digital Badge](https://www.carbondesignsystem.com/tutorial/react/wrapping-up).
-
 ## Contributing
 
-We're always looking for contributors to help us fix bugs, build new features, or help us improve documentation. If you're interested, check out our [contributing guide](/.github/CONTRIBUTING.md).
-
-## Troubleshooting
-
-If you experience any issues while using Carbon for IBM Security, please [create an issue](https://github.com/carbon-design-system/ibm-security/issues/new?labels=defect&template=BUG.md) if your issue does not already exist.
+We're always looking for contributors to help us fix bugs, build new features, or help us improve documentation. If you're interested, definitely check out our [contributing guide](/.github/CONTRIBUTING.md) and [Carbon's developer handbook](https://github.com/carbon-design-system/carbon/tree/master/docs/developer-handbook.md).
 
 ## License
 

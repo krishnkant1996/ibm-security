@@ -1,17 +1,16 @@
 ---
-name: Request
+name: Proposal
 about: Suggest an idea
 ---
 
-## Request - <!-- Short description -->
+## Proposal - <!-- Short description -->
 
 ### Details
 
-- **Application / team -** <!-- Application / team that the request belongs to -->
+- **Application / team -** <!-- Application / team that the proposal belongs to -->
 - **Work item -** [<!-- Work item -->](<!-- Work item URL -->)
-- **Needed by -** <!-- Needed by date -->
 
-### Proposal
+### Description
 
 <!-- Long description -->
 

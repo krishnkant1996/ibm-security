@@ -18,7 +18,6 @@
 
 - [ ] Semantic HTML
 - [ ] Automated accessibility tests
-- [ ] No accessibility warnings in Storybook
 
 ##### Breakpoints
 
@@ -35,19 +34,10 @@
 - [ ] SassDoc
 - [ ] Written in a human-readable format
 
-##### Integration
-
-- [ ] Integrates with and leverages [Carbon](https://github.com/carbon-design-system/carbon) wherever possible
-
 ##### Internationalization
 
 - [ ] No hardcoded text exposed to the user, even with screen readers
 - [ ] Translated text provided in all applicable languages
-
-##### Mock data
-
-- [ ] Provide mock data that can be shared across stories and tests
-- [ ] Mock data doesn't contain any personally-identifiable information
 
 ##### Sass
 
