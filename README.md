@@ -103,10 +103,6 @@ To add all of the components' processed and minified styles, reference `@carbon/
 - [Storybook](docs/storybook.md)
 - [Themes](docs/themes)
 
-### Themes
-
-Themes are used for applying color in Carbon for IBM Security and offered by outputting [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) for theme tokens. Check out our [theming documentation](docs/themes) for guidelines.
-
 ## Contributing
 
 We're always looking for contributors to help us fix bugs, build new features, or help us improve documentation. If you're interested, definitely check out our [contributing guide](/.github/CONTRIBUTING.md) and [Carbon's developer handbook](https://github.com/carbon-design-system/carbon/tree/master/docs/developer-handbook.md).

@@ -1,6 +1,7 @@
 ---
 name: Bug report
 about: Something isn't working as expected? Submit a bug report
+labels: 'type: bug'
 ---
 
 ## Bug - <!-- Short description -->
@@ -39,7 +40,7 @@ about: Something isn't working as expected? Submit a bug report
 
 ### Affected browsers
 
-[What's my browser?](http://www.whatsmyua.com) and [browserl.ist supported browsers](http://browserl.ist/?q=%3E+1%25%2C+not+IE+11)
+[What's my browser?](http://www.whatsmyua.com) and [browserl.ist supported browsers](https://github.com/carbon-design-system/ibm-security/blob/master/package.json#L174-L178)
 
 - [ ] <!-- Chrome 50 on Mac OSX 10 --> / <!-- Development, production -->
 - [ ] <!-- Chrome 50 on Windows 10 --> / <!-- Development, production -->

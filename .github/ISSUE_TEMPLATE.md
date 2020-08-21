@@ -1,55 +1,52 @@
-## Story
+---
+labels: 'status: refining'
+---
 
-### _As a_ <!--  persona -->, _I want_ <!-- need --> _so that_ <!-- rationale -->.
+## _As a_ <!--  persona -->, _I want_ <!-- need --> _so that_ <!-- rationale -->.
 
-#### Context
+### Description
 
 <!-- Long description -->
 
-#### Acceptance criteria
+### Acceptance criteria
 
 ![<!-- Screenshot (if applicable) -->](<!-- Screenshot URL -->)
 
 - [ ] <!-- List of acceptance criteria outlined from the persona's perspective -->
 
-#### Definition of Done
+### Definition of Done
 
-##### Accessibility
+#### Accessibility
 
-- [ ] Semantic HTML
-- [ ] Automated accessibility tests
+- [ ] Semantic HTML is used by default where relevant, with ARIA attributes used as required
+- [ ] No violations produced as a result of automated accessibility tests
 
-##### Breakpoints
+#### Breakpoints
 
-- [ ] Desktop, tablet, and mobile, if applicable
+- [ ] Mobile, tablet, and desktop, if applicable
 
-##### Browser support
+#### Browser support
 
-- [ ] [browserl.ist supported browsers](http://browserl.ist/?q=%3E+1%25%2C+not+IE+11)
+- [ ] [browserl.ist supported browsers](https://github.com/carbon-design-system/ibm-security/blob/master/package.json#L174-L178)
 
-##### Documentation
+#### Documentation
 
-- [ ] `defaultProps` and `propTypes` are included as part of class definitions and correctly documented
-- [ ] JSDoc
-- [ ] SassDoc
-- [ ] Written in a human-readable format
+- [ ] `defaultProps` and `propTypes` are included as part of component definitions, and documented in a human-readable format
 
-##### Internationalization
+#### Internationalization
 
 - [ ] No hardcoded text exposed to the user, even with screen readers
-- [ ] Translated text provided in all applicable languages
 
-##### Sass
+#### Sass
 
-- [ ] Follows the directory structure or provides a good justification for changing it
-- [ ] Follows the naming convention
+- [ ] Follows the directory structure and naming convention, or provides a good justification for changing it
 
-##### Storybook
+#### Storybook
 
-- [ ] Provide knobs
 - [ ] Stories that capture features of the component
+- [ ] Provide controls for customising features of the component
 
-##### Tests
+#### Tests
 
-- [ ] Snapshot tests to ensure rendering
-- [ ] 100% unit test coverage
+- [ ] Tests are behaviour-driven and written similarly to how a user would interact with the component
+- [ ] Automated accessibility tests
