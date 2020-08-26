@@ -2,17 +2,17 @@
 labels: 'status: refining'
 ---
 
-## _As a_ <!--  persona -->, _I want_ <!-- need --> _so that_ <!-- rationale -->.
+## _As a_ <!--  persona -->, _I want_ <!-- need --> _so that_ <!-- rationale -->
 
 ### Description
 
 <!-- Long description -->
 
-### Acceptance criteria
-
 ![<!-- Screenshot (if applicable) -->](<!-- Screenshot URL -->)
 
-- [ ] <!-- List of acceptance criteria outlined from the persona's perspective -->
+### Acceptance criteria
+
+- [ ] <!-- List of acceptance criteria  -->
 
 ### Definition of Done
 
