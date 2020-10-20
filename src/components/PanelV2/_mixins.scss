@@ -1,7 +1,7 @@
 ////
 /// Panel mixins.
 /// @group panel
-/// @copyright IBM Security 2019
+/// @copyright IBM Security 2019 - 2020
 ////
 
 @import '@carbon/layout/scss/mini-unit';
@@ -17,6 +17,7 @@
 @import '../../globals/rtl/index';
 @import '../../globals/theme/mixins';
 
+@import '../ComboButton/variables';
 @import '../Header/mixins';
 @import '../IconButton/mixins';
 @import '../Toolbar/mixins';
@@ -59,7 +60,7 @@
   background-color: $ui-01;
   flex-direction: column;
   justify-content: space-between;
-  z-index: z($layer: floating);
+  z-index: z($layer: floating) + 1;
   outline: none;
 
   @include rtl {
@@ -154,9 +155,12 @@
     bottom: 0;
     width: $panel__sizing__width;
 
-    .#{$namespace}button:not(.#{$namespace}combo-button__overflow-menu) {
-      max-width: $panel__sizing__width;
+    &__button {
       flex-grow: 1;
+    }
+
+    #{get-component-namespace($component-name: $combo-button__name)} {
+      width: 100%;
     }
   }
 

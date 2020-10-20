@@ -30,10 +30,13 @@ exports[`ComboButton renders a combo button with children and an overflow menu 1
             "render": [Function],
           }
         }
+        size="default"
         tabIndex={0}
+        tooltipAlignment="center"
+        tooltipPosition="top"
         type="button"
       >
-        <ForwardRef(Button)
+        <Button
           className="security--button security--combo-button--primary"
           disabled={false}
           iconDescription=""
@@ -46,7 +49,10 @@ exports[`ComboButton renders a combo button with children and an overflow menu 1
               "render": [Function],
             }
           }
+          size="default"
           tabIndex={0}
+          tooltipAlignment="center"
+          tooltipPosition="top"
           type="button"
         >
           <button
@@ -98,15 +104,15 @@ exports[`ComboButton renders a combo button with children and an overflow menu 1
               </Icon>
             </ForwardRef(ArrowRight20)>
           </button>
-        </ForwardRef(Button)>
+        </Button>
       </Button>
       <ForwardRef(OverflowMenu)
         className="security--button bx--btn bx--btn--primary security--combo-button__button security--combo-button__overflow-menu"
         direction="top"
         menuOffset={[Function]}
         menuOptionsClass="bx--list-box__menu"
+        onClick={[Function]}
         onClose={[Function]}
-        onOpen={[Function]}
         renderIcon={[Function]}
         selectorPrimaryFocus="[data-overflow-menu-primary-focus]"
       >
@@ -143,8 +149,9 @@ exports[`ComboButton renders a combo button with children and an overflow menu 1
               onKeyDown={[Function]}
               open={false}
               tabIndex={0}
+              type="button"
             >
-              <renderIcon
+              <renderOverflowMenuIcon
                 aria-label="open and close list of options"
                 className="bx--overflow-menu__icon"
                 focusable="false"
@@ -180,7 +187,7 @@ exports[`ComboButton renders a combo button with children and an overflow menu 1
                     </svg>
                   </Icon>
                 </ForwardRef(ChevronDown16)>
-              </renderIcon>
+              </renderOverflowMenuIcon>
             </button>
           </ClickListener>
         </OverflowMenu>
@@ -220,10 +227,13 @@ exports[`ComboButton renders a combo button without an overflow menu 1`] = `
             "render": [Function],
           }
         }
+        size="default"
         tabIndex={0}
+        tooltipAlignment="center"
+        tooltipPosition="top"
         type="button"
       >
-        <ForwardRef(Button)
+        <Button
           className="security--button security--combo-button--primary"
           disabled={false}
           iconDescription=""
@@ -236,7 +246,10 @@ exports[`ComboButton renders a combo button without an overflow menu 1`] = `
               "render": [Function],
             }
           }
+          size="default"
           tabIndex={0}
+          tooltipAlignment="center"
+          tooltipPosition="top"
           type="button"
         >
           <button
@@ -288,7 +301,7 @@ exports[`ComboButton renders a combo button without an overflow menu 1`] = `
               </Icon>
             </ForwardRef(ArrowRight20)>
           </button>
-        </ForwardRef(Button)>
+        </Button>
       </Button>
     </div>
   </div>
