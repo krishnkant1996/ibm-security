@@ -163,6 +163,7 @@ export default class Toolbar extends Component {
                 icon,
                 id: navigationItemId,
                 title: navigationItemTitle,
+                ...props
               }) =>
                 children ? (
                   <NavList key={navigationItemId} title={navigationItemTitle}>
@@ -173,13 +174,16 @@ export default class Toolbar extends Component {
                         icon,
                         id: navigationListItemId,
                         title: navigationListItemTitle,
+                        ...props
                       }) => (
                         <NavItem
                           key={navigationListItemId}
+                          onClick={() => this.togglePanel(type)}
                           id={navigationListItemId}
                           href={navigationListItemHref}
                           link={content === undefined}
                           handleItemSelect={() => this.toggleContent(content)}
+                          {...props}
                         >
                           {navigationListItemTitle}
                           {icon !== undefined && (
@@ -197,9 +201,11 @@ export default class Toolbar extends Component {
                   <NavItem
                     key={navigationItemId}
                     id={navigationItemId}
+                    onClick={() => this.togglePanel(type)}
                     href={href}
                     link={content === undefined}
                     handleItemSelect={() => this.toggleContent(content)}
+                    {...props}
                   >
                     {navigationItemTitle}
                     {icon !== undefined && (
